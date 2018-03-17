@@ -48,7 +48,7 @@ public class SnakeMatrix {
 //            for(i=0; i<n; i++){
 //                System.out.format("%5s ",arr[i][j]);
 //            }
-//            System.out.println();
+//            System.out.println();1
 //            System.out.println();
 //        }
     }
