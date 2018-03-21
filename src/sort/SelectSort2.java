@@ -1,10 +1,10 @@
 package sort;
 
-public class ShellSort {
+public class SelectSort2 {
 	public static void main(String[] args) {
 		int[] arrays = { 2, 8, 6, 2, 5,9, 1, 6, 7, 3 };
 		display(arrays);
-		shellSort(arrays);
+		selectSort(arrays);
 		display(arrays);
 	}
 
@@ -16,7 +16,7 @@ public class ShellSort {
 		
 	}
 
-	private static void shellSort(int[] arrays) {
+	private static void selectSort(int[] arrays) {
 		int out, in;
 		for(out=1; out<arrays.length; out++){
 			int temp = arrays[out];
