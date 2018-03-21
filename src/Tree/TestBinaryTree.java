@@ -21,7 +21,7 @@ public class TestBinaryTree
         TreeNode<Character> root=binaryTree.creatBinaryPre(tree);
 
         //先序遍历（递归）
-        binaryTree.PrintBinaryTreePreRecur(root);System.out.println();
+//        binaryTree.PrintBinaryTreePreRecur(root);System.out.println();
 //        //中序遍历（递归）
 //        binaryTree.PrintBinaryTreeMidRecur(root);System.out.println();
 //        //后序遍历（递归）
@@ -30,8 +30,10 @@ public class TestBinaryTree
 //
 //        //先序遍历（非递归）
 //        binaryTree.PrintBinaryTreePreUnrecur(root);System.out.println();
+//        binaryTree.PrintBinaryTreePreUnrecur1(root);System.out.println();
 //        //中序遍历（非递归）
 //        binaryTree.PrintBinaryTreeMidUnrecur(root);System.out.println();
+            binaryTree.PrintBinaryTreeMidUnrecur1(root);System.out.println();
 //        //后序遍历（非递归）
 //        binaryTree.PrintBinaryTreeBacUnrecur(root);System.out.println();
 //        //层次遍历（非递归）

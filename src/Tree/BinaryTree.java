@@ -9,6 +9,7 @@ package Tree;
  */
 
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class BinaryTree<T>
 {
@@ -94,6 +95,21 @@ public class BinaryTree<T>
             }
         }
     }
+
+    public void PrintBinaryTreePreUnrecur1(TreeNode<T> root){
+        TreeNode<T> cur = root;
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        while(cur!=null || !stack.isEmpty()){
+            if(cur!=null){
+                stack.push(cur);
+                System.out.print(cur.data+" ");
+                cur = cur.left;
+            }else{
+                cur = stack.pop();
+                cur = cur.right;
+            }
+        }
+    }
     /*
      * 中序遍历二叉树（非递归）
      *
@@ -123,6 +139,20 @@ public class BinaryTree<T>
                 p=stack.pop();
                 System.out.print(p.data);
                 p=p.right;
+            }
+        }
+    }
+    public void PrintBinaryTreeMidUnrecur1(TreeNode<T> root){
+        TreeNode<T> cur = root;
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        while(cur!=null || !stack.isEmpty()){
+            if(cur!=null){
+                stack.push(cur);
+                cur = cur.left;
+            }else{
+                cur = stack.pop();
+                System.out.print(cur.data + " ");
+                cur = cur.right;
             }
         }
     }
